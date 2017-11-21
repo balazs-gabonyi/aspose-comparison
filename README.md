@@ -4,12 +4,12 @@
 #### Text
 - [x] [Find the position of a given text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/SearchAndGetTextPositionsFromPagesOfPDFDocument.java)
 - [x] [Delete text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/DeleteTextFromAllPagesOfDocument.java)
-- [x] [ReplaceTextWithCustomContentTextFormField](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/ReplaceTextWithCustomContentTextFormField.java)
+- [x] [Replace given text with a FormField containing custom text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/ReplaceTextWithCustomContentTextFormField.java)
 #### Signature / Image
-- [ ] Placing an image on a given position
+- [ ] Place an image on a given position
 - [ ] Extract image file from Signature
 #### File
-- [ ] Merge mutliple PDFs
+- [ ] Merge multiple PDFs
 ***
 ## Aspose JAR
 This project uses a downloaded aspose.pdf.jar that is placed manually on the classpath.  
