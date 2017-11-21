@@ -10,8 +10,6 @@ public class TextToFormFieldUtil {
 
     private Document pdfDocument;
     private List<Position> replaceableTextPositions;
-    private List<Position> desiredFormFieldPositions = new LinkedList<>();
-    ;
     private int replaceableFontSize;
     private int formFieldHorizontalSize;
 
@@ -24,7 +22,7 @@ public class TextToFormFieldUtil {
 
     public void replaceTextWithFormField(String textToReplace, String formFieldContent) {
         replaceableTextPositions = PositionUtil.getPositionsOfTextOnPage(pdfDocument, textToReplace);
-        RemoveTextOnAllPages(pdfDocument, textToReplace, "");
+        RemoveTextOnAllPages(pdfDocument, textToReplace);
         replaceableTextPositions.forEach(position -> AddFormFiledOnPosition(position, formFieldContent));
     }
 

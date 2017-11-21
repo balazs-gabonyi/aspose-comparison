@@ -8,6 +8,8 @@ import static hu.balazsg.asposelearn.util.ConstantUtil.*;
 
 public class DeleteTextFromAllPagesOfDocument {
 
+    private static final String TEXT_TO_DELETE = "DOCUMENT";
+
     public static void main(String[] args) {
         LicenseUtil.getLicenseFromSrcRoot();
         deleteTextFromAllPagesOfDocument();
@@ -15,7 +17,7 @@ public class DeleteTextFromAllPagesOfDocument {
 
     private static void deleteTextFromAllPagesOfDocument(){
         Document pdfDocument = new Document(INPUT_PDF);
-        Document deletedTextDocument = ReplaceTextUtil.RemoveTextOnAllPages(pdfDocument, "DOCUMENT", "");
+        ReplaceTextUtil.RemoveTextOnAllPages(pdfDocument, TEXT_TO_DELETE);
         pdfDocument.save(OUTPUT_TEXT_TO_DELETE);
     }
 }
