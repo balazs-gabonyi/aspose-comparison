@@ -1,4 +1,4 @@
-package hu.balazsg.asposelearn.text.wrapped;
+package hu.balazsg.asposelearn.wrapped.text;
 
 import com.aspose.pdf.*;
 
@@ -16,5 +16,15 @@ public class PositionUtil {
 
         textFragmentCollection.forEach(textFragment -> positions.add(textFragment.getPosition()));
         return positions;
+    }
+
+    public static Position addPositions (Position... positions){
+        double xCoordinateOfResult = 0D;
+        double yCoordinateOfResult = 0D;
+        for (Position current : positions){
+            xCoordinateOfResult += current.getXIndent();
+            yCoordinateOfResult += current.getYIndent();
+        }
+        return new Position(xCoordinateOfResult, yCoordinateOfResult);
     }
 }

@@ -1,10 +1,8 @@
-package hu.balazsg.asposelearn.text.wrapped;
+package hu.balazsg.asposelearn.wrapped.text;
 
 import com.aspose.pdf.*;
 
 import java.util.*;
-
-import static hu.balazsg.asposelearn.text.wrapped.ReplaceTextUtil.RemoveTextOnAllPages;
 
 public class TextToFormFieldUtil {
 
@@ -22,7 +20,7 @@ public class TextToFormFieldUtil {
 
     public void replaceTextWithFormField(String textToReplace, String formFieldContent) {
         replaceableTextPositions = PositionUtil.getPositionsOfTextOnPage(pdfDocument, textToReplace);
-        RemoveTextOnAllPages(pdfDocument, textToReplace);
+        ReplaceTextUtil.RemoveTextOnAllPages(pdfDocument, textToReplace);
         replaceableTextPositions.forEach(position -> AddFormFiledOnPosition(position, formFieldContent));
     }
 

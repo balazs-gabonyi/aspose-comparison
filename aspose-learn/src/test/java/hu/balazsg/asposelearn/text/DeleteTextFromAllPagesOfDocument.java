@@ -1,7 +1,7 @@
 package hu.balazsg.asposelearn.text;
 
 import com.aspose.pdf.Document;
-import hu.balazsg.asposelearn.text.wrapped.ReplaceTextUtil;
+import hu.balazsg.asposelearn.wrapped.text.ReplaceTextUtil;
 import hu.balazsg.asposelearn.util.LicenseUtil;
 
 import static hu.balazsg.asposelearn.util.ConstantUtil.*;

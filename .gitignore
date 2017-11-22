@@ -2,4 +2,7 @@ target/
 *.pdf
 *.docx
 *.txt
+*.png
+*.bmp
+*.jpg
 Aspose.Pdf.lic

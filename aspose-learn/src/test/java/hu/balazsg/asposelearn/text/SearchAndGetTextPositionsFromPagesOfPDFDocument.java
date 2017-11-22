@@ -1,7 +1,7 @@
 package hu.balazsg.asposelearn.text;
 
 import com.aspose.pdf.*;
-import hu.balazsg.asposelearn.text.wrapped.PositionUtil;
+import hu.balazsg.asposelearn.wrapped.text.PositionUtil;
 import hu.balazsg.asposelearn.util.LicenseUtil;
 
 import java.util.List;

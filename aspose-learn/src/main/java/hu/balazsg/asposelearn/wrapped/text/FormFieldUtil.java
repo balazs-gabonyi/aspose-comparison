@@ -1,4 +1,4 @@
-package hu.balazsg.asposelearn.text.wrapped;
+package hu.balazsg.asposelearn.wrapped.text;
 
 import com.aspose.pdf.*;
 
