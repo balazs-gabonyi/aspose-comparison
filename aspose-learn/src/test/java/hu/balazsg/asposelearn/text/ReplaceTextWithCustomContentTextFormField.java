@@ -16,7 +16,7 @@ public class ReplaceTextWithCustomContentTextFormField {
     public static void replaceTextToFormFields() {
         Document pdfDocument = new Document(INPUT_PDF);
         TextToFormFieldUtil textToFormFieldUtil = new TextToFormFieldUtil(pdfDocument, 20, 200);
-        textToFormFieldUtil.replaceTextWithFormField(TEXT_TO_REMOVE, ARVIZTURO);
+        textToFormFieldUtil.replaceTextWithFormField(TEXT_TO_REMOVE,TEXT_TO_REMOVE, ARVIZTURO);
         pdfDocument.save(OUTPUT_TEXT_TO_FORMFIELDS);
     }
 }
