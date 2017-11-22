@@ -6,7 +6,7 @@
 - [x] [Delete text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/DeleteTextFromAllPagesOfDocument.java)
 - [x] [Replace given text with a FormField containing custom text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/ReplaceTextWithCustomContentTextFormField.java)
 #### Signature / Image
-- [ ] Place an image on a given position
+- [x] [Place an image on a given position](/aspose-learn/src/test/java/hu/balazsg/asposelearn/image/PlaceImageOnPositionWithSize.java)
 - [ ] Extract image file from Signature
 #### File
 - [ ] Merge multiple PDFs
