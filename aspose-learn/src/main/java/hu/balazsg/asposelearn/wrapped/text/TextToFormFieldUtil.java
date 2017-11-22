@@ -18,15 +18,15 @@ public class TextToFormFieldUtil {
     }
 
 
-    public void replaceTextWithFormField(String textToReplace, String formFieldContent) {
+    public void replaceTextWithFormField(String textToReplace, String formFieldId, String formFieldContent) {
         replaceableTextPositions = PositionUtil.getPositionsOfTextOnPage(pdfDocument, textToReplace);
         ReplaceTextUtil.RemoveTextOnAllPages(pdfDocument, textToReplace);
-        replaceableTextPositions.forEach(position -> AddFormFiledOnPosition(position, formFieldContent));
+        replaceableTextPositions.forEach(position -> AddFormFiledOnPosition(position, formFieldId, formFieldContent));
     }
 
 
-    private void AddFormFiledOnPosition(Position position, String content) {
-        FormFieldUtil.addFormFieldOnPosition(pdfDocument, position, formFieldHorizontalSize, replaceableFontSize, content);
+    private void AddFormFiledOnPosition(Position position, String formFieldId, String formFieldContent) {
+        FormFieldUtil.addFormFieldOnPosition(pdfDocument, position, formFieldHorizontalSize, replaceableFontSize, formFieldId, formFieldContent);
     }
 
 }

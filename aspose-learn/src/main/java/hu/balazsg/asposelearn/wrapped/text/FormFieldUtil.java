@@ -6,13 +6,15 @@ import java.util.UUID;
 
 public class FormFieldUtil {
 
+    private static final String FORM_NAME = "form";
 
-    public static Document addFormFieldOnPosition(Document pdfDocument, Position position, int horizontalSize, int verticalSize, String content) {
+
+    public static Document addFormFieldOnPosition(Document pdfDocument, Position position, int horizontalSize, int verticalSize, String id, String content) {
         double posX = position.getXIndent();
         double posY = position.getYIndent();
         double rectangleAbsoluteSizeX = posX + horizontalSize;
         double rectangleAbsoluteSizeY = posY + verticalSize;
-        return addFormField(pdfDocument, posX, posY, rectangleAbsoluteSizeX, rectangleAbsoluteSizeY, content);
+        return addFormField(pdfDocument, posX, posY, rectangleAbsoluteSizeX, rectangleAbsoluteSizeY, id, content);
     }
 
     private static Document addFormField(
@@ -21,6 +23,7 @@ public class FormFieldUtil {
             double verticalDistanceFromBottomLeftCorner,
             double horizontalSize,
             double verticalSize,
+            String id,
             String content
     ) {
         TextBoxField textBoxField1 = new TextBoxField(
@@ -31,7 +34,7 @@ public class FormFieldUtil {
                         horizontalSize,
                         verticalSize));
 
-        textBoxField1.setPartialName(UUID.randomUUID().toString());
+        textBoxField1.setPartialName(id);
         textBoxField1.setValue(content);
         Border border = new Border(textBoxField1);
         border.setWidth(0);
