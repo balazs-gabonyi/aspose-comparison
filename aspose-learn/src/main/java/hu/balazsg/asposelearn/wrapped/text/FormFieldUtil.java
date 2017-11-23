@@ -6,9 +6,6 @@ import java.util.UUID;
 
 public class FormFieldUtil {
 
-    private static final String FORM_NAME = "form";
-
-
     public static Document addFormFieldOnPosition(Document pdfDocument, Position position, int horizontalSize, int verticalSize, String id, String content) {
         double posX = position.getXIndent();
         double posY = position.getYIndent();

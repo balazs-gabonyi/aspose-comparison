@@ -14,6 +14,7 @@ public class ReplaceTextUtil {
     public static void ReplaceTextOnAllPages(Document pdfDocument, String original, String replacement, int fontSize) {
         LicenseUtil.getLicenseFromSrcRoot();
         TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(original);
+
         pdfDocument.getPages().accept(textFragmentAbsorber);
         TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
         for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
