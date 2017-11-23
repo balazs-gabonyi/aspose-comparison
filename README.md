@@ -12,6 +12,9 @@
 #### Signature
 - [ ] Extract image file from Signature
 ***
+##Output files
+The location of used and generated files is: aspose-pdf-poc\aspose-learn\testFiles\
+***
 ## Aspose JAR
 This project uses a downloaded aspose.pdf.jar that is placed manually on the classpath.  
 In case you'd like to use aspose.pdf as a dependency uncomment the dependencies and repositories in [pom.xml](aspose-learn/pom.xml) of the aspose-learn module, and set the appropriate version.
@@ -20,6 +23,6 @@ In case you'd like to use aspose.pdf as a dependency uncomment the dependencies 
 These POC examples only work properly with a paid or a temporary license.  
 Temporary (but free) licenses can be acquired for companies only using [these instructions](http://www.aspose.com/corporate/purchase/temporary-license.aspx).
 
-Copy your license file to the root of the cloned project if you have one.  
+Copy your license file to aspose-pdf-poc\aspose-learn\ if you have one.  
 Make sure the file is named: Aspose.Pdf.lic
 
