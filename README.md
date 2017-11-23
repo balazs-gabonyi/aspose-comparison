@@ -12,7 +12,7 @@
 #### Signature
 - [ ] Extract image file from Signature
 ***
-##Output files
+## Output files
 The location of used and generated files is: aspose-pdf-poc\aspose-learn\testFiles\
 ***
 ## Aspose JAR
