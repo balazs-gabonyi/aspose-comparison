@@ -24,6 +24,7 @@ public class LicenseHelper {
         try {
             licenseFile = new FileInputStream(ASPOSE_LICENSE_FILE_NAME);
             license.setLicense(licenseFile);
+            licenseFile.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

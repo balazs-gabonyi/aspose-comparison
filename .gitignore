@@ -6,3 +6,4 @@ target/
 *.bmp
 *.jpg
 Aspose.Pdf.lic
+**/aspose-learn/testFiles/

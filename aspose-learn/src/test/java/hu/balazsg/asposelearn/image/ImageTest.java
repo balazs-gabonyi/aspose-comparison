@@ -5,11 +5,11 @@ import hu.balazsg.asposelearn.util.LicenseHelper;
 import hu.balazsg.asposelearn.wrapped.image.ImageUtil;
 import org.junit.*;
 
-import static hu.balazsg.asposelearn.util.ConstantUtil.TEST_FOLDER_PATH;
+import static hu.balazsg.asposelearn.util.ConstantUtil.*;
 
 public class ImageTest {
 
-    private static Document pdfDocument = new Document(TEST_FOLDER_PATH + "input.pdf");
+    private static Document pdfDocument = new Document(INPUT_PDF);
     private static final String IMAGE_PATH = TEST_FOLDER_PATH + "aspose595x842i.png";
     private static final String OUTPUT_NAME = TEST_FOLDER_PATH + "PageWithImages.pdf";
 

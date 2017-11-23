@@ -17,7 +17,7 @@ public class FilesTest {
     private static final String PDF_5 = TEST_FOLDER_PATH + "Pdf5.pdf";
 
     @BeforeClass
-    public static void init() throws IOException {
+    public static void init() {
         LicenseHelper.getLicenseFromSrcRoot();
     }
 

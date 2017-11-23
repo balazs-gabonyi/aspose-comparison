@@ -34,7 +34,6 @@ public class TextTest {
 
     @Test
     public void printTextPositionsTest() {
-        LicenseHelper.getLicenseFromSrcRoot();
         Document pdfDocument = new Document(INPUT_PDF);
         System.out.println("Listing Positions with the following String: " + LOWER_CASE_E);
         printTextPositions(pdfDocument, LOWER_CASE_E);
