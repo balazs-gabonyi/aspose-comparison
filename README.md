@@ -9,7 +9,7 @@
 - [x] [Place an image on a given position](/aspose-learn/src/test/java/hu/balazsg/asposelearn/image/PlaceImageOnPositionWithSize.java)
 - [ ] Extract image file from Signature
 #### File
-- [ ] Merge multiple PDFs
+- [x] [Merge multiple PDFs](/aspose-learn/src/test/java/hu/balazsg/asposelearn/files/MergeMultiplePDFFiles.java)
 ***
 ## Aspose JAR
 This project uses a downloaded aspose.pdf.jar that is placed manually on the classpath.  
