@@ -1,7 +1,6 @@
 package hu.balazsg.asposelearn.wrapped.text;
 
 import com.aspose.pdf.*;
-import hu.balazsg.asposelearn.util.LicenseUtil;
 
 public class ReplaceTextUtil {
 
@@ -12,7 +11,6 @@ public class ReplaceTextUtil {
     }
 
     public static void ReplaceTextOnAllPages(Document pdfDocument, String original, String replacement, int fontSize) {
-        LicenseUtil.getLicenseFromSrcRoot();
         TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(original);
 
         pdfDocument.getPages().accept(textFragmentAbsorber);

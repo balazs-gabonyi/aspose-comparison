@@ -24,8 +24,8 @@ public class ImageUtil {
         this.pdfDocument = pdfDocument;
     }
 
-    public void saveDocument(){
-        pdfDocument.save("ImageAdded.pdf");
+    public void saveDocument(String outputName){
+        pdfDocument.save(outputName);
     }
 
     public  void addImageOfWidthToExistingPDFFile(

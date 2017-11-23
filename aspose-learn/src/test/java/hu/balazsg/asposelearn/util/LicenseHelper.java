@@ -4,22 +4,22 @@ import com.aspose.pdf.License;
 
 import java.io.FileInputStream;
 
-
-public class LicenseUtil {
+public class LicenseHelper {
 
     private static final String ASPOSE_LICENSE_FILE_NAME = "Aspose.Pdf.lic";
     private static License license = new com.aspose.pdf.License();
 
-    public static License getLicenseFromJarDirectory() {
+    public static void getLicenceFromResources(){
+        FileInputStream licenseFile = null;
+        licenseFile = (FileInputStream) LicenseHelper.class.getResourceAsStream(ASPOSE_LICENSE_FILE_NAME);
         try {
-            license.setLicense(ASPOSE_LICENSE_FILE_NAME);
+            license.setLicense(licenseFile);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return license;
     }
 
-    public static License getLicenseFromSrcRoot() {
+    public static void getLicenseFromSrcRoot() {
         FileInputStream licenseFile = null;
         try {
             licenseFile = new FileInputStream(ASPOSE_LICENSE_FILE_NAME);
@@ -27,7 +27,5 @@ public class LicenseUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return license;
     }
-
 }

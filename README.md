@@ -1,15 +1,16 @@
 # POC Tests of Aspose PDF  - Java
 ***
 ## Tested Features
-#### Text
-- [x] [Find the position of a given text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/SearchAndGetTextPositionsFromPagesOfPDFDocument.java)
-- [x] [Delete text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/DeleteTextFromAllPagesOfDocument.java)
-- [x] [Replace given text with a FormField containing custom text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/ReplaceTextWithCustomContentTextFormField.java)
-#### Signature / Image
-- [x] [Place an image on a given position](/aspose-learn/src/test/java/hu/balazsg/asposelearn/image/PlaceImageOnPositionWithSize.java)
+#### [Text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/TextTest.java)
+- [x] Find the position of a given text
+- [x] Delete text
+- [x] Replace given text with a FormField containing custom text
+#### [Image](/aspose-learn/src/test/java/hu/balazsg/asposelearn/image/ImageTest.java)
+- [x] Place an image on a given position
+#### [File](/aspose-learn/src/test/java/hu/balazsg/asposelearn/files/FilesTest.java)
+- [x] Merge multiple PDFs
+#### Signature
 - [ ] Extract image file from Signature
-#### File
-- [x] [Merge multiple PDFs](/aspose-learn/src/test/java/hu/balazsg/asposelearn/files/MergeMultiplePDFFiles.java)
 ***
 ## Aspose JAR
 This project uses a downloaded aspose.pdf.jar that is placed manually on the classpath.  
