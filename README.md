@@ -1,15 +1,15 @@
 # POC Tests of Aspose PDF  - Java
 ***
 ## Tested Features
-#### [Text](/aspose-learn/src/test/java/hu/balazsg/asposelearn/text/TextTest.java)
+#### [Text](/aspose-learn/src/test/java/hu/balazsg/aspose/pdf/text/TextTest.java)
 - [x] Find the position of a given text
 - [x] Delete text
 - [x] Replace given text with a FormField containing custom text
-#### [Image](/aspose-learn/src/test/java/hu/balazsg/asposelearn/image/ImageTest.java)
+#### [Image](/aspose-learn/src/test/java/hu/balazsg/aspose/pdf/image/ImageTest.java)
 - [x] Place an image on a given position
-#### [File](/aspose-learn/src/test/java/hu/balazsg/asposelearn/files/FilesTest.java)
+#### [File](/aspose-learn/src/test/java/hu/balazsg/aspose/pdf/files/FilesTest.java)
 - [x] Merge multiple PDFs
-#### [Signature](/aspose-learn/src/test/java/hu/balazsg/asposelearn/signature/SignatureTest.java)
+#### [Signature](/aspose-learn/src/test/java/hu/balazsg/aspose/pdf/signature/SignatureTest.java)
 - [x] Sign PDF using a cert and a password
 - [ ] Extract image file from Signature (only works for Aspose signatures)  
 ***
@@ -28,5 +28,5 @@ Copy your license file to aspose-pdf-poc\aspose-learn\ if you have one.
 Make sure the file is named: Aspose.Pdf.lic
 
 ## .PFX file for Signing
-The temp.pfx certificate should be placed in [this folder](/aspose-learn/testFiles/input/) and its corresponding [12345 password should be renamed](/aspose-learn/src/test/java/hu/balazsg/asposelearn/util/ConstantUtil.java) to whatever your cert is.
+The temp.pfx certificate should be placed in [this folder](/aspose-learn/testFiles/input/) and its corresponding [12345 password should be renamed](/aspose-learn/src/test/java/hu/balazsg/aspose/pdf/util/ConstantUtil.java) to whatever your cert is.
 
