@@ -27,3 +27,6 @@ Temporary (but free) licenses can be acquired for companies only using [these in
 Copy your license file to aspose-pdf-poc\aspose-learn\ if you have one.  
 Make sure the file is named: Aspose.Pdf.lic
 
+## .PFX file for Signing
+The temp.pfx certificate should be placed in [this folder](/aspose-learn/testFiles/input/) and its corresponding [12345 password should be renamed](/aspose-learn/src/test/java/hu/balazsg/asposelearn/util/ConstantUtil.java) to whatever your cert is.
+
