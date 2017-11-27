@@ -1,10 +1,10 @@
-package hu.balazsg.asposelearn.wrapped.text;
+package hu.balazsg.asposelearn.wrapped.file;
 
 import com.aspose.pdf.Document;
 
 import java.util.List;
 
-public class MergePDFUtil {
+public class Merging {
 
     public static void mergePdfs(String outputName, List<String> inputs) {
         Document mergeTarget = new Document(inputs.get(0));

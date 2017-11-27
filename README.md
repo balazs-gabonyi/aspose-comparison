@@ -9,8 +9,9 @@
 - [x] Place an image on a given position
 #### [File](/aspose-learn/src/test/java/hu/balazsg/asposelearn/files/FilesTest.java)
 - [x] Merge multiple PDFs
-#### Signature
-- [ ] Extract image file from Signature
+#### [Signature](/aspose-learn/src/test/java/hu/balazsg/asposelearn/signature/SignatureTest.java)
+- [x] Sign PDF using a cert and a password
+- [ ] Extract image file from Signature (only works for Aspose signatures)  
 ***
 ## Output files
 The location of used and generated files is: aspose-pdf-poc\aspose-learn\testFiles\
