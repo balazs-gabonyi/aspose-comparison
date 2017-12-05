@@ -7,6 +7,8 @@ import org.junit.*;
 
 import java.util.*;
 
+import static hu.balazsg.aspose.pdf.util.ConstantUtil.INPUT_WITH_FORM_SIGNATURE;
+import static hu.balazsg.aspose.pdf.util.ConstantUtil.OUTPUT_FORM_SIGNATURE;
 import static hu.balazsg.aspose.pdf.wrapped.text.PositionLookup.getPositionsOfTextOnPage;
 
 public class TextTest {
@@ -44,6 +46,13 @@ public class TextTest {
         Document pdfDocument = new Document(ConstantUtil.INPUT);
         System.out.println("Listing Positions with the following String: " + lowerCase_e);
         printTextPositions(pdfDocument, lowerCase_e);
+    }
+
+    @Test
+    public void fillFormFieldsWithText(){
+        final String textToFill = "HELLOTEXT - OTHERSTUFF / ANOTHERSTUFFSTUFF";
+        Document pdfDocument = new Document(INPUT_WITH_FORM_SIGNATURE);
+        FormField.fillAllFields(pdfDocument,textToFill,OUTPUT_FORM_SIGNATURE);
     }
 }
 

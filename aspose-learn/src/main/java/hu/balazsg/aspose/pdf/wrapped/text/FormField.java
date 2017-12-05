@@ -20,6 +20,17 @@ public class FormField {
         addFormField(pdfDocument, pageNumber, posX, posY, rectangleAbsoluteSizeX, rectangleAbsoluteSizeY, id, content);
     }
 
+    public static void fillAllFields(Document pdfDocument, String text, String outputName){
+        Field[] fields = pdfDocument.getForm().getFields();
+        for (int i = 0; i < fields.length; i++){
+            if (fields[i] instanceof  TextBoxField){
+                Field current = fields[i];
+                current.setValue(text);
+            }
+        }
+        pdfDocument.save(outputName);
+    }
+
     private static void addFormField(
             Document pdfDocument,
             int pageNumber,

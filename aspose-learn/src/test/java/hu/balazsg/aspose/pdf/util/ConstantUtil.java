@@ -13,6 +13,7 @@ public class ConstantUtil {
     public static final String INPUT_2 = INPUT_FOLDER + "input2" + EXTENSION;
     public static final String INPUT_3 = INPUT_FOLDER + "input3" + EXTENSION;
     public static final String INPUT_4 = INPUT_FOLDER + "input4" + EXTENSION;
+    public static final String INPUT_WITH_FORM_SIGNATURE = INPUT_FOLDER + "inputWithFieldWithSignature" + EXTENSION;
     public static final String IMAGE = INPUT_FOLDER + "aspose595x842i.png";
     public static final String SIGNATURE_IMAGE = INPUT_FOLDER + "signatureImage.png";
 
@@ -22,6 +23,7 @@ public class ConstantUtil {
     public static final String OUTPUT_TEXT_TO_REMOVED = TEST_FILES_PATH + "TextRemoved" + EXTENSION;
     public static final String OUTPUT_SIGNED = TEST_FILES_PATH + "Signed" + EXTENSION;
     public static final String SIGNATURE_EXTRACTED_IMAGE = TEST_FILES_PATH + "SignatureImage";
+    public static final String OUTPUT_FORM_SIGNATURE = TEST_FILES_PATH + "FilledFieldWithSignature" + EXTENSION;
 
     public static final String ARVIZTURO = "árvíztűrőtükörfúrógépÁRVÍZTŰRŐTÜKÖRFÚRÓGÉP";
 }
